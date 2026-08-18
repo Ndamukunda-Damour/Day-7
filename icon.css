@@ -3,5 +3,18 @@ a:link{
 text-decoration: none;
 }
 a:active{
+    color: rgb(255, 0, 0);
+}
+a:active{
+color: black;
+}
+a:hover{
+    color: greenyellow;
+
+}
+.button{
     background-color: blue;
+    padding: 10px;
+    border-radius: 5px;
+    
 }
