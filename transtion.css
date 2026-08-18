@@ -1,0 +1,23 @@
+.box{
+    width: 150px;
+    height: 100px;
+    transition:2s;
+    background-color : black;
+}
+.box:hover{
+    background-color: red;
+    width: 300px;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    transition: width 3s ease-in-out;
+}
+.box1:hover{
+    background-color: aqua;
+    width: 300px;
+transform: rotate(360deg);
+
+}
+
