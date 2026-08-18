@@ -28,10 +28,11 @@ p{
 /* .container{
     position: relative;
     height: 300px; */
-   .container::after{
-    content: "";
-    clear: both;
-    display: table;
+   .container{
+    height: 60vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+background-color: blue;
    }
 .container{
     border: 1px solid black;
