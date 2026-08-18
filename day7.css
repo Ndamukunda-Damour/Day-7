@@ -29,15 +29,22 @@ p{
     position: relative;
     height: 300px; */
    .container{
-    height: 60vh;
+    height: 200px;
     padding-top: 50px;
     padding-bottom: 50px;
 background-color: blue;
+line-height: 200px;
+align-content: center;
+
    }
 .container{
     border: 1px solid black;
 }
 .img-right{
-   float: right;
-   width: 200px;
+  height: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+background-color: blue;
+line-height: 200px;
+align-content: center;
 }
