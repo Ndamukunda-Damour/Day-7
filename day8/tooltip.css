@@ -1,0 +1,40 @@
+*{
+   margin: 0;
+}
+.tooltip{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    transform: translateY(100%);
+    border-bottom: 1px dashed red;
+}
+.tooltiptext{
+    width: 120px;
+    visibility: hidden;
+    position: absolute;
+    left: 100%;
+    padding: 10px 0px;
+    text-align: center;
+    top: 100%;
+    
+ 
+
+
+}
+.tooltiptext::after{
+    content: " ";
+    border-width: 5px;
+    border-color: brown transparent  transparent;
+    border-style: solid;
+    top: 100%;
+    left: 40%;
+    position: absolute;
+}
+
+.tooltip:hover .tooltiptext{
+    visibility: visible;
+    background-color: blue;
+    color: white;
+    width: 120px;
+
+}
