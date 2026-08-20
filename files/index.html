@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgriMarket Rwanda - Farm Fresh Marketplace</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ====================== HEADER ====================== -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo">
+        <h1>AgriMarket <span>Rwanda</span></h1>
+      </div>
+
+      <!-- Hamburger button for mobile menu (JavaScript toggle) -->
+      <button class="menu-toggle" id="menuToggle">☰</button>
+
+      <nav class="main-nav" id="mainNav">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#farmers">Farmers</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#map">Our Locations</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <p class="reg-header">Reg. No: REG/NO/2026</p>
+  </header>
+
+  <!-- ====================== HERO / HOMEPAGE ====================== -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h2>Fresh From the Farm to Your Table</h2>
+      <p>Connecting Rwanda's local farmers and cooperatives directly with buyers in Kigali and beyond.</p>
+      <a href="#products" class="btn btn-primary">Browse Products</a>
+    </div>
+    <img src="https://picsum.photos/id/1080/700/450" alt="Fresh agricultural produce" class="hero-img">
+  </section>
+
+  <!-- ====================== FEATURED FARMERS ====================== -->
+  <section id="farmers" class="section farmers-section">
+    <h2 class="section-title">Featured Farmers &amp; Cooperatives</h2>
+    <div class="card-grid">
+      <div class="card">
+        <img src="https://picsum.photos/id/1076/400/250" alt="Bugesera Vegetable Cooperative">
+        <div class="card-body">
+          <h3>Bugesera Vegetable Cooperative</h3>
+          <p>Bugesera District — Fresh tomatoes, cabbages and onions grown organically.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1082/400/250" alt="Nyagatare Dairy Farmers">
+        <div class="card-body">
+          <h3>Nyagatare Dairy Farmers</h3>
+          <p>Nyagatare District — Fresh milk, yogurt and cheese from grass-fed cows.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/id/1025/400/250" alt="Rwamagana Fruit Growers">
+        <div class="card-body">
+          <h3>Rwamagana Fruit Growers</h3>
+          <p>Rwamagana District — Mangoes, pineapples and avocados in season.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== PRODUCT LISTINGS + SLIDESHOW ====================== -->
+  <section id="products" class="section products-section">
+    <h2 class="section-title">Our Products</h2>
+
+    <!-- Image Slideshow -->
+    <div class="slideshow">
+      <img src="https://picsum.photos/id/292/800/350" class="slide active" alt="Farm produce slide 1">
+      <img src="https://picsum.photos/id/1040/800/350" class="slide" alt="Farm produce slide 2">
+      <img src="https://picsum.photos/id/1080/800/350" class="slide" alt="Farm produce slide 3">
+      <button class="slide-btn prev" id="prevSlide">&#10094;</button>
+      <button class="slide-btn next" id="nextSlide">&#10095;</button>
+    </div>
+
+    <!-- Filter buttons -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="vegetable">Vegetables</button>
+      <button class="filter-btn" data-filter="fruit">Fruits</button>
+      <button class="filter-btn" data-filter="dairy">Dairy</button>
+    </div>
+
+    <!-- Product cards -->
+    <div class="card-grid" id="productGrid">
+      <div class="card product-card" data-category="vegetable">
+        <img src="https://picsum.photos/id/292/400/250" alt="Tomatoes">
+        <div class="card-body">
+          <h3>Fresh Tomatoes</h3>
+          <p class="price">500 RWF / kg</p>
+        </div>
+      </div>
+      <div class="card product-card" data-category="vegetable">
+        <img src="https://picsum.photos/id/1080/400/250" alt="Cabbage">
+        <div class="card-body">
+          <h3>Cabbage</h3>
+          <p class="price">400 RWF / kg</p>
+        </div>
+      </div>
+      <div class="card product-card" data-category="fruit">
+        <img src="https://picsum.photos/id/1025/400/250" alt="Mangoes">
+        <div class="card-body">
+          <h3>Mangoes</h3>
+          <p class="price">800 RWF / kg</p>
+        </div>
+      </div>
+      <div class="card product-card" data-category="fruit">
+        <img src="https://picsum.photos/id/1040/400/250" alt="Pineapples">
+        <div class="card-body">
+          <h3>Pineapples</h3>
+          <p class="price">1000 RWF / each</p>
+        </div>
+      </div>
+      <div class="card product-card" data-category="dairy">
+        <img src="https://picsum.photos/id/1082/400/250" alt="Fresh Milk">
+        <div class="card-body">
+          <h3>Fresh Milk</h3>
+          <p class="price">600 RWF / litre</p>
+        </div>
+      </div>
+      <div class="card product-card" data-category="dairy">
+        <img src="https://picsum.photos/id/431/400/250" alt="Yogurt">
+        <div class="card-body">
+          <h3>Yogurt</h3>
+          <p class="price">700 RWF / litre</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== TESTIMONIALS ====================== -->
+  <section id="testimonials" class="section testimonials-section">
+    <h2 class="section-title">What Our Customers Say</h2>
+    <div class="card-grid">
+      <div class="testimonial-card">
+        <p>"AgriMarket helped me buy fresh vegetables directly from farmers every week. Great quality!"</p>
+        <h4>- Uwase Claudine, Kigali</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"As a restaurant owner, I now get fresh dairy products delivered on time. Highly recommended."</p>
+        <h4>- Mugisha Eric, Kigali</h4>
+      </div>
+      <div class="testimonial-card">
+        <p>"Selling my fruits directly to buyers has doubled my income. Thank you AgriMarket!"</p>
+        <h4>- Niyonzima Jean, Rwamagana</h4>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== STATIC MAP SECTION ====================== -->
+  <section id="map" class="section map-section">
+    <h2 class="section-title">Our Farm Locations</h2>
+    <p>Find our partner farmers and cooperatives across these districts.</p>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d255316.5!2d30.0!3d-1.95!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sRwanda!5e0!3m2!1sen!2srw!4v1610000000000"
+        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- ====================== CONTACT / ORDER FORM ====================== -->
+  <section id="contact" class="section contact-section">
+    <h2 class="section-title">Contact / Order Request</h2>
+    <form id="contactForm" class="contact-form" novalidate>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name">
+        <span class="error" id="nameError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email">
+        <span class="error" id="emailError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" placeholder="e.g. 0788123456">
+        <span class="error" id="phoneError"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Order Details / Message</label>
+        <textarea id="message" name="message" rows="4" placeholder="What would you like to order?"></textarea>
+        <span class="error" id="messageError"></span>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Send Request</button>
+      <p class="success-msg" id="successMsg"></p>
+    </form>
+  </section>
+
+  <!-- ====================== FOOTER ====================== -->
+  <footer class="main-footer">
+    <p>&copy; 2026 AgriMarket Rwanda. All Rights Reserved.</p>
+    <p class="reg-footer">Reg. No: REG/NO/2026</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
