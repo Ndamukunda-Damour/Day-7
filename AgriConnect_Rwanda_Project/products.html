@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriConnect Rwanda - Products</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="reg-number">Reg.No: 2025-2026</div>
+        <div class="logo">
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=50&h=50&fit=crop" alt="Logo">
+            <h1>AgriConnect Rwanda</h1>
+        </div>
+        <nav class="main-nav">
+            <button class="menu-toggle" id="menuToggle">☰ Menu</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="farmers.html">Farmers</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="testimonials.html">Reviews</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <h2 class="section-title">Our Products</h2>
+        <p class="page-desc">Browse fresh produce directly from Rwandan farmers.</p>
+
+        <!-- Filter Buttons -->
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All Products</button>
+            <button class="filter-btn" data-filter="vegetables">Vegetables</button>
+            <button class="filter-btn" data-filter="fruits">Fruits</button>
+            <button class="filter-btn" data-filter="dairy">Dairy</button>
+            <button class="filter-btn" data-filter="grains">Grains</button>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="product-listing" id="productListing">
+            <div class="product-card" data-category="vegetables">
+                <img src="https://images.unsplash.com/photo-1598170845058-32b9d6a5da37?w=300&h=200&fit=crop" alt="Tomatoes">
+                <h3>Fresh Tomatoes</h3>
+                <p class="price">1,200 RWF/kg</p>
+                <p class="location">Bugesera District</p>
+                <button class="btn-order" onclick="addToCart('Fresh Tomatoes', 1200)">Add to Order</button>
+            </div>
+
+            <div class="product-card" data-category="fruits">
+                <img src="https://images.unsplash.com/photo-1603052875302-d376b7c0638a?w=300&h=200&fit=crop" alt="Bananas">
+                <h3>Ripe Bananas</h3>
+                <p class="price">800 RWF/bunch</p>
+                <p class="location">Nyagatare District</p>
+                <button class="btn-order" onclick="addToCart('Ripe Bananas', 800)">Add to Order</button>
+            </div>
+
+            <div class="product-card" data-category="dairy">
+                <img src="https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=300&h=200&fit=crop" alt="Milk">
+                <h3>Fresh Milk</h3>
+                <p class="price">1,500 RWF/liter</p>
+                <p class="location">Gicumbi District</p>
+                <button class="btn-order" onclick="addToCart('Fresh Milk', 1500)">Add to Order</button>
+            </div>
+
+            <div class="product-card" data-category="grains">
+                <img src="https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=300&h=200&fit=crop" alt="Beans">
+                <h3>Organic Beans</h3>
+                <p class="price">2,000 RWF/kg</p>
+                <p class="location">Rwamagana District</p>
+                <button class="btn-order" onclick="addToCart('Organic Beans', 2000)">Add to Order</button>
+            </div>
+
+            <div class="product-card" data-category="vegetables">
+                <img src="https://images.unsplash.com/photo-1597362925123-77861d3fbac7?w=300&h=200&fit=crop" alt="Carrots">
+                <h3>Fresh Carrots</h3>
+                <p class="price">900 RWF/kg</p>
+                <p class="location">Bugesera District</p>
+                <button class="btn-order" onclick="addToCart('Fresh Carrots', 900)">Add to Order</button>
+            </div>
+
+            <div class="product-card" data-category="fruits">
+                <img src="https://images.unsplash.com/photo-1553279768-865429fa0078?w=300&h=200&fit=crop" alt="Mangoes">
+                <h3>Sweet Mangoes</h3>
+                <p class="price">1,000 RWF/kg</p>
+                <p class="location">Kigali District</p>
+                <button class="btn-order" onclick="addToCart('Sweet Mangoes', 1000)">Add to Order</button>
+            </div>
+
+            <div class="product-card" data-category="dairy">
+                <img src="https://images.unsplash.com/photo-1486297678749-3d4b6d6c6f6f?w=300&h=200&fit=crop" alt="Cheese" onerror="this.src='https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=300&h=200&fit=crop'">
+                <h3>Local Cheese</h3>
+                <p class="price">3,500 RWF/kg</p>
+                <p class="location">Nyagatare District</p>
+                <button class="btn-order" onclick="addToCart('Local Cheese', 3500)">Add to Order</button>
+            </div>
+
+            <div class="product-card" data-category="vegetables">
+                <img src="https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?w=300&h=200&fit=crop" alt="Onions">
+                <h3>Red Onions</h3>
+                <p class="price">1,100 RWF/kg</p>
+                <p class="location">Bugesera District</p>
+                <button class="btn-order" onclick="addToCart('Red Onions', 1100)">Add to Order</button>
+            </div>
+
+            <div class="product-card" data-category="fruits">
+                <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38?w=300&h=200&fit=crop" alt="Avocados">
+                <h3>Hass Avocados</h3>
+                <p class="price">1,500 RWF/kg</p>
+                <p class="location">Rwamagana District</p>
+                <button class="btn-order" onclick="addToCart('Hass Avocados', 1500)">Add to Order</button>
+            </div>
+
+            <div class="product-card" data-category="grains">
+                <img src="https://images.unsplash.com/photo-1574852859542-1b41217a7815?w=300&h=200&fit=crop" alt="Potatoes">
+                <h3>Irish Potatoes</h3>
+                <p class="price">700 RWF/kg</p>
+                <p class="location">Gicumbi District</p>
+                <button class="btn-order" onclick="addToCart('Irish Potatoes', 700)">Add to Order</button>
+            </div>
+
+            <div class="product-card" data-category="dairy">
+                <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=300&h=200&fit=crop" alt="Yogurt">
+                <h3>Natural Yogurt</h3>
+                <p class="price">1,800 RWF/500ml</p>
+                <p class="location">Nyagatare District</p>
+                <button class="btn-order" onclick="addToCart('Natural Yogurt', 1800)">Add to Order</button>
+            </div>
+
+            <div class="product-card" data-category="fruits">
+                <img src="https://images.unsplash.com/photo-1550258987-190a2d41a8ba?w=300&h=200&fit=crop" alt="Pineapples">
+                <h3>Sweet Pineapples</h3>
+                <p class="price">1,300 RWF/each</p>
+                <p class="location">Kigali District</p>
+                <button class="btn-order" onclick="addToCart('Sweet Pineapples', 1300)">Add to Order</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+            <button class="close-cart" id="closeCart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">No items yet. Browse products!</p>
+        </div>
+        <div class="cart-total">
+            <strong>Total: <span id="cartTotal">0</span> RWF</strong>
+        </div>
+        <a href="contact.html" class="btn-checkout">Proceed to Order</a>
+    </div>
+    <button class="cart-toggle" id="cartToggle">🛒 <span id="cartCount">0</span></button>
+
+    <footer class="main-footer">
+        <div class="reg-number">Reg.No: 2025-2026</div>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>AgriConnect Rwanda</h3>
+                <p>Connecting local farmers with consumers across Rwanda.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: info@agriconnect.rw</p>
+                <p>Phone: +250 788 123 456</p>
+            </div>
+        </div>
+        <p class="copyright">© 2026 AgriConnect Rwanda. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

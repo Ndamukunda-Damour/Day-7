@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriConnect Rwanda - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="reg-number">Reg.No: 2025-2026</div>
+        <div class="logo">
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=50&h=50&fit=crop" alt="Logo">
+            <h1>AgriConnect Rwanda</h1>
+        </div>
+        <nav class="main-nav">
+            <button class="menu-toggle" id="menuToggle">☰ Menu</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="farmers.html">Farmers</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="testimonials.html">Reviews</a></li>
+                <li><a href="map.html">Map</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <h2 class="section-title">Contact & Order</h2>
+        <p class="page-desc">Send us a message or place your order request.</p>
+
+        <div class="contact-layout">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h3>Get In Touch</h3>
+                <div class="info-item">
+                    <span class="icon">📍</span>
+                    <div>
+                        <strong>Address</strong>
+                        <p>KN 4 Ave, Kigali, Rwanda</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="icon">📞</span>
+                    <div>
+                        <strong>Phone</strong>
+                        <p>+250 788 123 456</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="icon">✉️</span>
+                    <div>
+                        <strong>Email</strong>
+                        <p>info@agriconnect.rw</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <span class="icon">🕐</span>
+                    <div>
+                        <strong>Working Hours</strong>
+                        <p>Mon - Sat: 8:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Order Form -->
+            <div class="form-container">
+                <h3>Place Your Order</h3>
+                <form id="orderForm" novalidate>
+                    <div class="form-group">
+                        <label for="fullName">Full Name *</label>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name">
+                        <span class="error-msg" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="example@email.com">
+                        <span class="error-msg" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+250 7XX XXX XXX">
+                        <span class="error-msg" id="phoneError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="district">Your District</label>
+                        <select id="district" name="district">
+                            <option value="">Select your district</option>
+                            <option value="kigali">Kigali City</option>
+                            <option value="bugesera">Bugesera</option>
+                            <option value="nyagatare">Nyagatare</option>
+                            <option value="rwamagana">Rwamagana</option>
+                            <option value="gicumbi">Gicumbi</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="product">Product Interest *</label>
+                        <select id="product" name="product">
+                            <option value="">Select a product</option>
+                            <option value="tomatoes">Fresh Tomatoes</option>
+                            <option value="bananas">Ripe Bananas</option>
+                            <option value="milk">Fresh Milk</option>
+                            <option value="beans">Organic Beans</option>
+                            <option value="carrots">Fresh Carrots</option>
+                            <option value="mangoes">Sweet Mangoes</option>
+                            <option value="cheese">Local Cheese</option>
+                            <option value="onions">Red Onions</option>
+                            <option value="avocados">Hass Avocados</option>
+                            <option value="potatoes">Irish Potatoes</option>
+                            <option value="yogurt">Natural Yogurt</option>
+                            <option value="pineapples">Sweet Pineapples</option>
+                            <option value="multiple">Multiple Products</option>
+                        </select>
+                        <span class="error-msg" id="productError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="quantity">Quantity Needed</label>
+                        <input type="text" id="quantity" name="quantity" placeholder="e.g., 5 kg, 10 liters">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Any special requests or delivery instructions..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Submit Order Request</button>
+                    <div class="success-msg" id="successMsg">Thank you! Your order request has been submitted successfully. We will contact you soon.</div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="reg-number">Reg.No: 2025-2026</div>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>AgriConnect Rwanda</h3>
+                <p>Connecting local farmers with consumers across Rwanda.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: info@agriconnect.rw</p>
+                <p>Phone: +250 788 123 456</p>
+            </div>
+        </div>
+        <p class="copyright">© 2026 AgriConnect Rwanda. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

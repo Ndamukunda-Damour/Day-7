@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriConnect Rwanda - Farm Map</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="reg-number">Reg.No: 2025-2026</div>
+        <div class="logo">
+            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=50&h=50&fit=crop" alt="Logo">
+            <h1>AgriConnect Rwanda</h1>
+        </div>
+        <nav class="main-nav">
+            <button class="menu-toggle" id="menuToggle">☰ Menu</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="farmers.html">Farmers</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="testimonials.html">Reviews</a></li>
+                <li><a href="map.html" class="active">Map</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-content">
+        <h2 class="section-title">Farm Locations</h2>
+        <p class="page-desc">Find our partner farms and cooperatives across Rwanda.</p>
+
+        <div class="map-container">
+            <!-- Simulated Map of Rwanda -->
+            <div class="static-map">
+                <div class="map-title">Rwanda Agricultural Districts</div>
+
+                <!-- Map pins -->
+                <div class="map-pin" style="top: 55%; left: 55%;" data-farm="Bugesera Veg Coop">
+                    <div class="pin-marker">📍</div>
+                    <div class="pin-label">Bugesera</div>
+                    <div class="pin-popup">
+                        <h4>Bugesera Vegetable Cooperative</h4>
+                        <p>Tomatoes, Onions, Carrots</p>
+                        <a href="farmers.html">View Details</a>
+                    </div>
+                </div>
+
+                <div class="map-pin" style="top: 20%; left: 75%;" data-farm="Nyagatare Dairy">
+                    <div class="pin-marker">📍</div>
+                    <div class="pin-label">Nyagatare</div>
+                    <div class="pin-popup">
+                        <h4>Nyagatare Dairy Cooperative</h4>
+                        <p>Milk, Yogurt, Cheese</p>
+                        <a href="farmers.html">View Details</a>
+                    </div>
+                </div>
+
+                <div class="map-pin" style="top: 45%; left: 40%;" data-farm="Kigali Fruit Growers">
+                    <div class="pin-marker">📍</div>
+                    <div class="pin-label">Kigali</div>
+                    <div class="pin-popup">
+                        <h4>Kigali Fruit Growers</h4>
+                        <p>Bananas, Mangoes, Pineapples</p>
+                        <a href="farmers.html">View Details</a>
+                    </div>
+                </div>
+
+                <div class="map-pin" style="top: 35%; left: 60%;" data-farm="Rwamagana Farm">
+                    <div class="pin-marker">📍</div>
+                    <div class="pin-label">Rwamagana</div>
+                    <div class="pin-popup">
+                        <h4>Rwamagana Organic Farm</h4>
+                        <p>Beans, Avocados</p>
+                        <a href="farmers.html">View Details</a>
+                    </div>
+                </div>
+
+                <div class="map-pin" style="top: 15%; left: 45%;" data-farm="Gicumbi Farm">
+                    <div class="pin-marker">📍</div>
+                    <div class="pin-label">Gicumbi</div>
+                    <div class="pin-popup">
+                        <h4>Gicumbi Organic Farm</h4>
+                        <p>Beans, Maize, Irish Potatoes</p>
+                        <a href="farmers.html">View Details</a>
+                    </div>
+                </div>
+
+                <!-- District labels on map -->
+                <div class="district-label" style="top: 58%; left: 58%;">Bugesera</div>
+                <div class="district-label" style="top: 23%; left: 78%;">Nyagatare</div>
+                <div class="district-label" style="top: 48%; left: 43%;">Kigali</div>
+                <div class="district-label" style="top: 38%; left: 63%;">Rwamagana</div>
+                <div class="district-label" style="top: 18%; left: 48%;">Gicumbi</div>
+            </div>
+
+            <!-- Farm List Sidebar -->
+            <div class="farm-list">
+                <h3>Partner Locations</h3>
+                <div class="farm-list-item">
+                    <span class="pin-icon" style="color: #e74c3c;">●</span>
+                    <div>
+                        <strong>Bugesera Vegetable Cooperative</strong>
+                        <p>Bugesera District - Vegetables</p>
+                    </div>
+                </div>
+                <div class="farm-list-item">
+                    <span class="pin-icon" style="color: #3498db;">●</span>
+                    <div>
+                        <strong>Nyagatare Dairy Cooperative</strong>
+                        <p>Nyagatare District - Dairy</p>
+                    </div>
+                </div>
+                <div class="farm-list-item">
+                    <span class="pin-icon" style="color: #f39c12;">●</span>
+                    <div>
+                        <strong>Kigali Fruit Growers Association</strong>
+                        <p>Kigali & Rwamagana - Fruits</p>
+                    </div>
+                </div>
+                <div class="farm-list-item">
+                    <span class="pin-icon" style="color: #27ae60;">●</span>
+                    <div>
+                        <strong>Rwamagana Organic Farm</strong>
+                        <p>Rwamagana District - Grains & Fruits</p>
+                    </div>
+                </div>
+                <div class="farm-list-item">
+                    <span class="pin-icon" style="color: #9b59b6;">●</span>
+                    <div>
+                        <strong>Gicumbi Organic Farm</strong>
+                        <p>Gicumbi District - Grains</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="reg-number">Reg.No: 2025-2026</div>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>AgriConnect Rwanda</h3>
+                <p>Connecting local farmers with consumers across Rwanda.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>Email: info@agriconnect.rw</p>
+                <p>Phone: +250 788 123 456</p>
+            </div>
+        </div>
+        <p class="copyright">© 2026 AgriConnect Rwanda. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
